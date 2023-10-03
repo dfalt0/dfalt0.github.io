@@ -1,4 +1,4 @@
-### Hi there 👋
+### Welcome 👋 - this is my portfolio & blog; it's a work in progress :3 
 
 https://dfalt0.github.io
 
@@ -16,3 +16,4 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
