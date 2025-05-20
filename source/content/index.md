@@ -7,11 +7,11 @@ title: Diary of Dev
 This is a relatively fresh vault that I will be collecting my occasional notes of my various learning material and research that I invest my free time in across various topics - usually in malware and how to make/fine-tune my own AI models based on open-source models. 
 
 ## Current Research:
-### 2025 #2025
+### 2025 
 - hugging face models
 
 
-### 2024 #2024
+### 2024 
 - understanding mobile security -> https://github.com/MobSF/Mobile-Security-Framework-MobSF
 - addtionally -> https://github.com/ashishb/osx-and-ios-security-awesome
 - casestudies on previous -> https://github.com/dfalt0/malware1_casestudy
