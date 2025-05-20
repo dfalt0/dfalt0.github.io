@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CVE Reports/SQL Injections/Untitled.md",
+                "file": "Understanding of Security Principles/4. Zero-Trust in Security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "4. Zero-Trust in Security"
             }
           }
         ]
@@ -171,6 +171,11 @@
   },
   "active": "2d8837e6263008e3",
   "lastOpenFiles": [
+    "Understanding of Security Principles/3. Security Defense-in-Depth.md",
+    "Understanding of Security Principles/2. Least Privilege Security.md",
+    "Understanding of Security Principles/1. The Security CIA Triad.md",
+    "Understanding of Security Principles/0. Index - Security Principles.md",
+    "index.md",
     "CVE Reports/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in Wordpress.md",
     "CVE Reports/SQL Injections/Untitled.md",
     "Code Challenges/Binary Tree Level Order Traversal in Go, Kubernetes, & SQLite.md",
@@ -178,12 +183,7 @@
     "CVE Reports",
     "category-folder/index.md",
     "category-folder/Some note.md",
-    "index.md",
-    "Understanding of Security Principles/0. Index - Security Principles.md",
     "Understanding of Security Principles/4. Zero-Trust in Security.md",
-    "Understanding of Security Principles/3. Security Defense-in-Depth.md",
-    "Understanding of Security Principles/2. Least Privilege Security.md",
-    "Understanding of Security Principles/1. The Security CIA Triad.md",
     "Understanding of Security Principles",
     "category-folder"
   ]
