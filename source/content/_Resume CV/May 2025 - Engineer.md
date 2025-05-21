@@ -2,11 +2,13 @@
 ENGINEER/CYBERSEC RESUME
 #resume 
 
+---
 ## Summary
 Curious, adaptable, passionate about technology - 7 years of experience across IT, cybersecurity, devops, and large scale web application development. Looking to build out the next generation of AI applications and creating state of the art security systems and architecture. Specialties include malware analysis & digital forensics. 
 #### Hobbies: 
 - AI research, playing/creating music, 3d printing, hydroponics systems, & livestreaming games.
 
+---
 ## Relevant Experience 
 
 ### Senior Systems Engineer
@@ -18,6 +20,7 @@ Lincoln, NE — Jan 2022 - Jun 2023
 - Obtained: infoblox DNS for Security Practitioners 2023, VMware Network Security 2022
 ### Fullstack Web Dev, Undergrad Research Assistant
 Midwest Roadside Safety Facility - UNL Research Hub
+
 Lincoln, NE — Aug 2018 - May 2021
 - *Web Dev:* 
 	- Maintained full-stack PHP & MySQL web applications to improve security, performance, and scalability. 
@@ -32,6 +35,8 @@ Lincoln, NE — Mar 2017 - Oct 2019
 - Managed IT infrastructure, including Active Directory, SIEM, and SCCM, ensuring best practices.
 - Provided cybersecurity oversight, reducing system vulnerabilities and ensuring compliance with law enforcement IT standards.
 
+---
+
 ## Projects & Research
 
 #### AI/LLM Security Analysis (2024 – Present): 
@@ -45,11 +50,13 @@ Lincoln, NE — Mar 2017 - Oct 2019
 #### Studying Certificates (2022 - Present): 
 - CISSP, GIAC, AZ-500, Certified Ethical Hacker (CEH)
 
+---
 ## Education
 
 ### University of Nebraska Lincoln/Omaha — 2016 - 2021
 Bachelor of Science in Multidisciplinary Studies: Cybersecurity, IT, & ISQA
 
+---
 ## Skills
 ##### Automation & Scripting: 
 - Python
