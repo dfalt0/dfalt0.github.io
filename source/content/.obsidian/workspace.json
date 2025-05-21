@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "5abd678749d5a633",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_Resume CV/May 2025 - Engineer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "May 2025 - Engineer"
+            }
+          },
+          {
+            "id": "850cf76fcb08f834",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_Resume CV/May 2025 - Engineer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "May 2025 - Engineer"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -169,8 +198,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d8837e6263008e3",
+  "active": "850cf76fcb08f834",
   "lastOpenFiles": [
+    "_Resume CV/May 2025 - Interpreter.md",
+    "_Resume CV/May 2025 - Engineer.md",
+    "index.md",
+    "_Resume CV",
     "CVE Reports/Use-After-Free/CVE-2025-29824 - Exploit for Use After Free in Microsoft.md",
     "CVE Reports/Apache",
     "CVE Reports/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in WordPress.md",
@@ -181,7 +214,6 @@
     "Understanding of Security Principles/2. Least Privilege Security.md",
     "Understanding of Security Principles/1. The Security CIA Triad.md",
     "Understanding of Security Principles/0. Index - Security Principles.md",
-    "index.md",
     "Code Challenges/Binary Tree Level Order Traversal in Go, Kubernetes, & SQLite.md",
     "CVE Reports/SQL Injections",
     "CVE Reports",
