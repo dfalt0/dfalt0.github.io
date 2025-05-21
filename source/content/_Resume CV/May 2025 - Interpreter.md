@@ -1,21 +1,25 @@
 # Mark Akinshev
 INTERPRETATION/TRANSLATION RESUME
 #resume 
+
+---
 ## Relevant Experience
 
-#### Russian Interpreter
-CyraCom International, Inc.
+### Russian Interpreter
+#### CyraCom International, Inc.
 Remote — Aug 2024 - Present
 - Over-the-phone, certified Russian interpretation for medical, legal, business, emergency, & other industries.
 - Performing skilled, consecutive, first-person interpretation - ensuring meaning-for-meaning and accurate interpretation efficiently.
-#### Russian Interpreter & Translator
+### Russian Interpreter & Translator
 House of Prayer Church 
+
 Lincoln, NE — Aug 2018 - Mar 2025
 - Conducted real-time English-to-Russian interpretations during weekly church services, to a regular, weekly audience of over 350 Slavic and 100 English-speaking attendees, resulting in increased engagement.
 - Delivered accurate Russian-to-English & English-to-Russian interpretation over live audio-receivers (radios) to a small audience of 5 to 20 listeners on a translator rotation schedule each month during Fridays & Sunday services.
 - Translated and adapted hundreds of ProPresenter slides and other content for English, Russian, and Ukrainian audiences, resulting in more engagement from English speaking listeners and viewers on YouTube Live.
-#### Russian Interpreter & Translator
+### Russian Interpreter & Translator
 Midwest Roadside Safety Research Facility
+
 Lincoln, NE — Mar 2017 - Oct 2019
 - Live interpretation from Russian-to-English of Russian-speaking clients in the Department of Transportation industry, to professors and collaborators during roadside-crash tests, meetings, and technical conversations on roadside-barrier research.
 - Translated technical documentation on performance metrics, research results, and other documents for clear communication between Russian company clients, MwRSF, and Dept. of Transportation industry professionals.
