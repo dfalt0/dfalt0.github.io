@@ -13,6 +13,7 @@ Curious, adaptable, passionate about technology - 7 years of experience across I
 
 ### Senior Systems Engineer
 Infinite Systems, Inc. 
+
 Lincoln, NE — Jan 2022 - Jun 2023
 - Primary IT administrator for 25-30 clients, handling IT support, project development, network security, server infrastructure, and security audits for small to mid-sized businesses (3 to 200 staff).
 - Deployed MFA integrations and Federated IAM, configured through Azure and Microsoft AD, Fortinet, and Ubiquiti firewalls. Built HIPAA, NIST, and PCI-DSS certified system architecture and conducted compliance audits.
@@ -31,6 +32,7 @@ Lincoln, NE — Aug 2018 - May 2021
 	- Wrote mathematical functions and algorithms that calculated path trajectory of vehicles based on road & lane position in Python and MATLAB.
 ### IT Administrator
 University of Nebraska Lincoln Police Dept.
+
 Lincoln, NE — Mar 2017 - Oct 2019
 - Managed IT infrastructure, including Active Directory, SIEM, and SCCM, ensuring best practices.
 - Provided cybersecurity oversight, reducing system vulnerabilities and ensuring compliance with law enforcement IT standards.
