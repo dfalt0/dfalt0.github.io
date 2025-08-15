@@ -13,44 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "LeetCode Practice/Python/Arrays/1. Two Sum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "1. Two Sum"
             }
           },
           {
-            "id": "5abd678749d5a633",
+            "id": "b64cb319f7325a83",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Resume CV/May 2025 - Engineer.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "May 2025 - Engineer"
-            }
-          },
-          {
-            "id": "850cf76fcb08f834",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CVE Reports/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CVE-2024-44258 - Exploit for Link Following in Apple iPad OS 1"
+              "title": "Untitled"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -198,29 +183,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b77831b90dd9f87b",
+  "active": "2d8837e6263008e3",
   "lastOpenFiles": [
-    "CVE Reports 1/Use-After-Free/Untitled.md",
-    "CVE Reports 1/Use-After-Free/CVE-2025-29824 - Exploit for Use After Free in Microsoft.md",
-    "CVE Reports 1/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in Wordpress.md",
-    "CVE Reports 1/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS.md",
-    "CVE Reports 1/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS 1.md",
-    "CVE Reports 1/Use-After-Free",
-    "CVE Reports 1/SQL Injections",
-    "CVE Reports 1/Apache",
-    "CVE Reports 1/URLs",
-    "CVE Reports 1",
+    "Untitled.md",
+    "LeetCode Practice/Python/Arrays/1. Two Sum.md",
+    "LeetCode Practice/Python",
+    "LeetCode Practice/Python/Arrays",
     "CVE Reports/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS.md",
-    "CVE Reports/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS 1.md",
-    "CVE Reports/Use-After-Free/CVE-2025-29824 - Exploit for Use After Free in Microsoft.md",
+    "LeetCode Practice",
     "CVE Reports/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in Wordpress.md",
-    "CVE Reports/URLs",
-    "_Resume CV/May 2025 - Engineer.md",
-    "CVE Reports/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in WordPress.md",
-    "_Resume CV/May 2025 - Interpreter.md",
     "index.md",
+    "CVE Reports/Use-After-Free/CVE-2025-29824 - Exploit for Use After Free in Microsoft.md",
+    "Untitled 1.md",
+    "CVE Reports/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS 1.md",
+    "CVE Reports/URLs",
+    "Code Challenges/Binary Tree Level Order Traversal in Go, Kubernetes, & SQLite.md",
+    "_Resume CV/May 2025 - Interpreter.md",
+    "_Resume CV/May 2025 - Engineer.md",
     "_Resume CV",
     "CVE Reports/Apache",
+    "CVE Reports/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in WordPress.md",
     "CVE Reports/Use-After-Free/Untitled.md",
     "CVE Reports/Use-After-Free",
     "Understanding of Security Principles/4. Zero-Trust in Security.md",
@@ -228,9 +210,10 @@
     "Understanding of Security Principles/2. Least Privilege Security.md",
     "Understanding of Security Principles/1. The Security CIA Triad.md",
     "Understanding of Security Principles/0. Index - Security Principles.md",
-    "Code Challenges/Binary Tree Level Order Traversal in Go, Kubernetes, & SQLite.md",
     "CVE Reports/SQL Injections",
+    "CVE Reports",
     "category-folder/index.md",
-    "category-folder/Some note.md"
+    "category-folder/Some note.md",
+    "Understanding of Security Principles"
   ]
 }
