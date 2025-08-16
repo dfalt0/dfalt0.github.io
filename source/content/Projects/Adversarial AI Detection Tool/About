@@ -1,0 +1,22 @@
+Approach
+
+Prompt Injection Detection:
+
+Use rule-based heuristics to identify suspicious patterns (e.g., keywords like "ignore instructions," "bypass," or encoded inputs).
+Leverage a pre-trained language model to score input prompts for malicious intent.
+Optionally, use embeddings to detect semantic anomalies in prompts.
+
+
+Anomalous Output Detection:
+
+Monitor model outputs for unusual patterns, such as high perplexity, toxic content, or deviation from expected topics.
+Use a secondary classifier to flag outputs as anomalous based on embeddings or sentiment analysis.
+Incorporate statistical anomaly detection (e.g., Isolation Forest) for numerical features like output length or token distribution.
+
+
+Implementation:
+
+Use transformers for language model interactions and embeddings.
+Use textblob or vaderSentiment for sentiment/toxicity analysis.
+Use scikit-learn for anomaly detection.
+Log flagged inputs/outputs for further analysis.
