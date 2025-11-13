@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "index"
             }
-          },
-          {
-            "id": "c6818b0a8a0a70d9",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.14"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.14"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,11 +170,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c6818b0a8a0a70d9",
+  "active": "2d8837e6263008e3",
   "lastOpenFiles": [
+    "Code Challenges/Binary Tree Level Order Traversal in Go, Kubernetes, & SQLite.md",
+    "CVE Reports/Use-After-Free/CVE-2025-29824 - Exploit for Use After Free in Microsoft.md",
+    "CVE Reports/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS 1.md",
+    "CVE Reports/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS.md",
+    "CVE Reports/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in Wordpress.md",
+    "index.md",
     "Untitled",
     "Untitled.base",
-    "index.md",
     "Technical Analysis/Load Balancing/Understanding F5 Load Balancing.md",
     "Projects/Adversarial AI Detection Tool/About the Project.md",
     "Technical Analysis/Load Balancing",
@@ -196,21 +188,15 @@
     "Untitled.md",
     "LeetCode Practice/Python",
     "LeetCode Practice/Python/Arrays",
-    "CVE Reports/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS.md",
     "LeetCode Practice",
-    "CVE Reports/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in Wordpress.md",
-    "CVE Reports/Use-After-Free/CVE-2025-29824 - Exploit for Use After Free in Microsoft.md",
     "Untitled 1.md",
-    "CVE Reports/URLs/CVE-2024-44258 - Exploit for Link Following in Apple iPad OS 1.md",
     "CVE Reports/URLs",
-    "Code Challenges/Binary Tree Level Order Traversal in Go, Kubernetes, & SQLite.md",
     "_Resume CV/May 2025 - Interpreter.md",
     "_Resume CV/May 2025 - Engineer.md",
     "_Resume CV",
     "CVE Reports/Apache",
     "CVE Reports/SQL Injections/CVE-2022-21661 - Exploit for SQL Injection in WordPress.md",
     "CVE Reports/Use-After-Free/Untitled.md",
-    "CVE Reports/Use-After-Free",
     "Understanding of Security Principles/4. Zero-Trust in Security.md",
     "Understanding of Security Principles/3. Security Defense-in-Depth.md",
     "Understanding of Security Principles/2. Least Privilege Security.md",

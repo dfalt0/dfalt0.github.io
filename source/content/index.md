@@ -9,7 +9,9 @@ tags:
   - python
 ---
 
-# 🩹 Hello world!
+# Hello world!
+
+KAIZEN - My most exceptional work is the newest thing that I'm working on, because I'm always trying to get better, be better, and am better.
 
 This is a relatively fresh vault that I will be collecting my occasional notes of my various learning material and research that I invest my free time in across various topics - usually in malware and how to make/fine-tune my own AI models based on open-source models. 
 
@@ -20,15 +22,15 @@ This is a relatively fresh vault that I will be collecting my occasional notes o
 ### Artificial Intelligence (AI)
 - PEFT (Parameter-Efficient Fine-Tuning) open-source hugging face models
 
-### Solo-founder startups 
-- akinsec.com - IT Compliance Platform | https://akinsec.com
+### Solo-founder startups/company
+- akinsec.com - Automated SOC as a Service | https://akinsec.com
 - solarsystems.tech - selling Custom PCs | https://solarsytems.tech 
 
 
 ## 2024 
 - understanding mobile security -> https://github.com/MobSF/Mobile-Security-Framework-MobSF
-- addtionally -> https://github.com/ashishb/osx-and-ios-security-awesome
-- casestudies on previous -> https://github.com/dfalt0/malware1_casestudy
+- additionally -> https://github.com/ashishb/osx-and-ios-security-awesome
+- case studies on previous -> https://github.com/dfalt0/malware1_casestudy
   
 #### iOS security
 - Learning C, C++, Rust, & Go via Advent Of Code - https://adventofcode.com/
@@ -36,22 +38,19 @@ This is a relatively fresh vault that I will be collecting my occasional notes o
 
 -----
 ## Experience:
-- 1.5 years of Systems Engineering experience w/ VMware & IoT services
-- 2.5 years of Junior Full-Stack Dev in PHP/Laravel via WAMP
+- 4 months of building a startup 
+- 1+ of freelance consulting as a Cybersecurity Specialist
+- 1.5 of Systems Engineering in devops, networking, and IT
+- 2.5 years of Fullstack Dev + Undergrad Research Assistant - PHP Laravel, MySQL, MATLAB, Python, JavaScript, uBlox GPS/GNSS
+- 2 years as IT Admin for Police Dept.
 
 ----
 
 ## "Projects I'm most proud of"
 
-My most exceptional work is the newest thing that I'm working on, because I'm always trying to get better, be better, and am better - Kaizen mindset
+1. AkinSec - my webapp startup that I'm building myself (solo founder) - https://akinsec.com
 
-1. AkinSec - my webapp startup that I built/building myself (solo founder) - https://akinsec.com
-
-IT compliance is boring and tedious work - that being said, it's a real contender for having AI be directly implemented in its creation and management, and that's my objective with this startup: to simply and expedite (correctly) the process of managing important IT compliance adherence with laws and regulations for businesses. 
-
-I'm proud of it because I used new tech that I learned about on the go, and got better at existing language stacks as I worked to make it. 
-
-TL;DR - Webapp IT compliance startup made in Next.js, TypeScript, Tailwind CSS, tRPC, Vercel, Base44 
+Cybersecurity AI startup made in Next.js, TypeScript, Tailwind, Vercel, Base44 
 
 -----------------
 
