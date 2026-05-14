@@ -5,7 +5,7 @@ tags:
   - AskAkin
   - devblog
   - quartz
-description: "Index of internal dev notes for AskAkin (LibreChat fork) and the akinsec marketing site."
+description: "Index of dev notes: your AskAkin commits and the akinsec site (no credentials)."
 ---
 
 # Akinsec project — dev notes
@@ -15,7 +15,7 @@ Notes captured from **git history** (summarized, no credentials or environment v
 ## Pages
 
 - [[Timeline - Nov 2025 to May 2026]] — month-by-month narrative across both repos.
-- [[AskAkin - Git notes]] — AskAkin app: fork-specific work vs upstream LibreChat tracking.
+- [[AskAkin - Git notes]] — AskAkin: **your** commits only (file-level notes).
 - [[akinsec.com website - Git notes]] — Svelte marketing site and backend split.
 
 ## What this is not
@@ -27,7 +27,7 @@ Notes captured from **git history** (summarized, no credentials or environment v
 
 | Area | Role |
 |------|------|
-| AskAkin | Customer-facing chat app (LibreChat fork), deployment and product-specific integrations. |
+| AskAkin | Customer-facing chat app; dev notes list **your** commits only. |
 | akinsec | Public website, later split from an earlier combined repo; Svelte UI and related API work. |
 
 Last regenerated from local git logs: **2026-05-14** (update dates when you refresh these notes).

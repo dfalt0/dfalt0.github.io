@@ -1,63 +1,98 @@
 ---
-title: "AskAkin — git notes (fork vs upstream)"
+title: "AskAkin — my commits (author notes)"
 tags:
   - AskAkin
   - akinsec
-  - LibreChat
   - devblog
-description: "AskAkin repository: fork-specific commits and a high-level read of upstream LibreChat history."
+description: "AskAkin: only commits authored by markakinshev@gmail.com, with file-level git show notes."
 ---
 
-# AskAkin — git notes
+# AskAkin — my commits
 
-**AskAkin** is a **LibreChat fork** used as the Akinsec customer chat application. Most commits since late 2025 are **upstream LibreChat** merges and fixes; a small set are **product/fork** specific.
+AskAkin is built on **LibreChat**. This page documents **only work I committed** (Git author **`markakinshev@gmail.com`** — `dfalt0` / `Mark`). **No** third-party or upstream contributor history is summarized here.
 
-## Scale (sanitized stats)
+To regenerate the list locally:
 
-- Approx. **792** commits in the local log from **2025-11-01** through **2026-05-14** (`git log --since=2025-11-01 --oneline`).
-- Treat the long tail as **upstream** unless called out below.
+```bash
+git log --author="markakinshev@gmail.com" --format="%h %ai %s" --reverse
+```
 
-## Fork- and product-specific commits (messages as in git)
+---
 
-These are the clearest **non-upstream-style** subjects at the tip of history (newest first). Placeholder noise is omitted.
+## Commits — code-level summary (`git show --stat`)
 
-| Approx. date | Short hash | Subject |
-|--------------|------------|---------|
-| 2026-05-14 | `3f6630b80` | thorough code review and swap from bun to pnpm |
-| 2026-05-12 | `8abdc233d` | code review |
-| 2026-05-08 | `7689cdee6` | update dependencies again |
-| 2026-05-08 | `487bcdb70` | updated dependencies and npm package |
-| 2026-05-08 | `3cc9d1019` | Update package-lock.json |
-| 2026-05-07 | `1448f9bcd` | font updates to build |
-| 2026-05-07 | `33d4a96a8` | workspace changes |
-| 2026-04-29 | `ecea3c07d` | Onboarding and railway features |
-| 2026-04-28 | `47ed288d5` | Updated icons and loginpage |
-| 2026-04-28 | `bdd9cacd6` | Wazuh - Initial Integration |
+Newest first. Vague git titles are kept in headings; bullets describe **what actually changed**.
 
-Several nearby commits used **placeholder titles** in git; they were not copied here.
+### `3f6630b80` — 2026-05-14 — thorough code review and swap from bun to pnpm
 
-## Upstream LibreChat — how to read the firehose
+- **Package manager:** removed root **`bun.lock`** and large **`package-lock.json`** churn; added **`pnpm-lock.yaml`**, **`pnpm-workspace.yaml`**, **`.npmrc`**; **`package.json`**, **`turbo.json`**, Dockerfiles, **`.devcontainer`**, **`.do/gitnexus`**, `config/*` scripts updated for pnpm.
+- **CI:** Playwright workflow reshuffle (`playwright.yml` removed, **`playwright-e2e.yml`** added), **`npm-audit-scheduled.yml`**, edits across `backend-review`, `client`, `data-provider`, `eslint-ci`, `frontend-review`, `gitnexus-index`, etc.
+- **Akinsec MCP server:** **`api/server/mcp/akinsec/`** — `auth.js`, `context.js`, `server.js`, `tools.js`, `smoke.js`, **`__tests__/`** (auth, server, tools specs).
+- **Client / product:** **`sanitizeHtml.ts`**, **`isValidGtmId`**, **`gtm.ts`**, tests; **`ModelSelector`** + **`chrome.tsx`**, **`layout.ts`**, **`layout.spec.ts`**; **`ChatMessageTurnRoot`**; **`SidePanel/brand.tsx`**; **`TrustSection`**; **`MCPServerList`**; **`vite.config.ts`** large update; **`deploy/csp-headers.example`**; **`librechat.example.yaml`**.
+- **packages/api:** import/path fixes for pnpm resolution (`redisClients`, `apiKeys`, `mcp/connection`, etc.).
 
-Instead of listing hundreds of PR titles, group by **theme** when you scan `git log`:
+### `8abdc233d` — 2026-05-12 — code review
 
-- **MCP:** OAuth discovery, token refresh, reconnect storms, tool discovery permissions, tenant/admin callbacks.
-- **Security:** SSRF-style guards for actions/MCP, URL validation, rate limits, ACL and sharing fixes, sanitization for uploads and artifacts.
-- **Multi-tenant / admin:** tenant-scoped config, admin auth routes, grants/roles/groups APIs, config route splits.
-- **Data layer:** MongoDB/FerretDB compatibility, Redis job store, Meilisearch sync, migrations in `data-schemas` / `packages/api`.
-- **UX / a11y:** sidebar redesign, artifacts, model selector, screen reader fixes.
-- **Providers:** Bedrock, Vertex, OpenRouter, Gemini, Claude family updates and pricing/context windows.
+- **Rate limiters:** `forkLimiters`, `importLimiters`, `loginLimiter`, `messageLimiters`, `registerLimiter`, `resetPasswordLimiter`, `sttLimiters`, `ttsLimiters`, `uploadLimiters`, `verifyEmailLimiter` — aligned edits across **`...Limiter.js`** files.
+- **React shell:** **`App.jsx`**, **`AuthContext.tsx`**, **`ApiErrorBoundaryContext.tsx`**, **`main.jsx`**, **`ChatRoute.tsx`**, **`index.tsx`**, new **`routerFuture.ts`**, **`shims.ts`**.
+- **Theme env:** **`getThemeFromEnv.js` → `getThemeFromEnv.ts`**.
+- **Banners:** **`Banner.tsx`** + **`Banner.spec.tsx`**.
+- **Agents / storage:** **`packages/api/src/agents/chain.ts`**, **`client.ts`**, **`storage/s3/crud.ts`**, **`files/encode/utils.ts`**, **`tools/classification.ts`**, **`utils/ports.ts`** (+ spec), **`data-provider/src/request.ts`**.
+- **Docs / config:** **`AGENTS.md`**, **`librechat.example.yaml`**, **`a11y.yml` workflow**.
 
-Upstream **release tags** visible in this period include **v0.8.2**, **v0.8.3**, **v0.8.4**, **v0.8.5** (and `-rc` lines). Use `git tag -l "v0.8*"` locally for the exact set.
+### `7689cdee6` — 2026-05-08 — update dependencies again
 
-## Sensitive information — explicit exclusions
+- **`package.json`**, **`bun.lock`**, **`package-lock.json`** — dependency / lockfile cleanup (~1542 deletions in lockfile chunk).
 
-Do **not** add to this devblog:
+### `487bcdb70` — 2026-05-08 — updated dependencies and npm package
 
-- Values from `.env`, API keys, database URIs, or JWT secrets.
-- Private webhook URLs, signed URLs, or session material.
-- Customer-identifying ticket text pasted from issues.
+- **`package-lock.json`** large refresh; **`package.json`** (root, `api`, `client`, `packages/api`, `data-provider`); **`client/vite.config.ts`**; **`data-provider/src/actions.ts`**.
 
-Commit hashes and **public** upstream PR numbers (already in merge subjects) are generally fine; re-check before publish if a PR title ever contained internal names.
+### `3cc9d1019` — 2026-05-08 — Update package-lock.json
+
+- **`package-lock.json`** only (~1160 insertions) — lockfile sync.
+
+### `1448f9bcd` — 2026-05-07 — font updates to build
+
+- **Font binaries:** **`client/fonts/`** — Inter (regular/semibold/bold + italics), Roboto Mono latin subsets (woff2).
+- **`client/package.json`**, **`bun.lock`**, **`.gitignore`**.
+
+### `33d4a96a8` — 2026-05-07 — workspace changes
+
+- **Wazuh workspace pages:** **`ActivityWorkspacePage`**, **`AlertsWorkspacePage`**, **`CloudWorkspacePage`**, **`ConfigWorkspacePage`**, **`DevicesWorkspacePage`**, **`OpsWorkspacePage`**, **`ThreatsWorkspacePage`**, **`WazuhWorkspaceSkeleton`**, **`DonutSummary`** — UI and data-binding edits.
+- **New:** `SecurityEngineSetupBanner.tsx`.
+- **`lib/wazuh/mocks.ts`**, **`locales/en/translation.json`** (+~183 lines), **`package.json`**, **`bun.lock`**, **`Chat/Header.tsx`**.
+
+### `edbcde16a` — 2026-05-05 — *(vague git title)*
+
+- **Agents security module:** **`packages/api/src/agents/security/`** — `policy.ts`, `context.ts`, `audit.ts`, `redact.ts`, `types.ts`, **`index.ts`**, **`.spec.ts`** files; **`handlers.ts`** + **`handlers.security.spec.ts`**.
+- **API:** **`api/server/controllers/tools.js`** expanded; **`agents/openai.js`**, **`responses.js`**, **`Endpoints/agents/initialize.js`** touched.
+- **Client:** **`WorkspaceAreaTabs.tsx`**, **`workspaceNavItems.ts`**, **`SidePanel/MCPBuilder/MCPServerList.tsx`**, **`useSideNavLinks.ts`**, auth layout/footer/login/registration, **`Landing.tsx`**, **`Startup.tsx`**, **`style.css`**, **`vite.config.ts`**, **`librechat.example.yaml`**, **`translation.json`**, **`client/fonts/.gitkeep`**.
+
+### `ecea3c07d` — 2026-04-29 — Onboarding and railway features
+
+- **API:** **`AkinsecOnboardingController.js`**, **`akinsecOnboarding.js`**, **`verifyAkinsecOnboardingJwt.js`**, **`akinsecRailwayWazuhProvision.js`**, **`akinsecSecurityEngineUser.js`**, **`railwayGraphql.js`**; **`wazuhContextMiddleware.js`**; **`wazuh.js`**, **`wazuhThreats.js`**, **`AuthService.js`**, **`AuthController.js`**, **`jwtStrategy.js`**.
+- **Wazuh:** **`requestContext.js`**, **`indexerClient`**, **`managerClient`** updates.
+- **Schema / client API:** **`packages/data-schemas`** user fields (`railwayProjectId`, `railwayEnvironmentId`, etc.); **`packages/data-provider`** (`api-endpoints`, `data-service`, `config`, `request`, `types`, exports).
+- **Client:** **`SecurityEngineOnboarding.tsx`**, **`Registration.tsx`**, **`Landing.tsx`**, **`Footer.tsx`**, **`ExpandedPanel.tsx`**, **`Startup.tsx`**, **`index.tsx`**, **`translation.json`**, **`.env.example`**.
+
+### `47ed288d5` — 2026-04-28 — Updated icons and loginpage
+
+- **Branding:** **`client/public/assets/akinsec-favicon.png`**, **`client/index.html`**.
+- **Auth screens:** **`AuthLayout.tsx`**, **`Login.tsx`**, **`LoginForm.tsx`**, **`Registration.tsx`**, **`RequestPasswordReset.tsx`**, **`ResetPassword.tsx`**, **`TwoFactorScreen.tsx`**, **`VerifyEmail.tsx`**, **`Footer.tsx`**, **`TwoFactorController.js`**, **`AuthService.js`**, **`config.js`**, **`.env.example`**, **`vite.config.ts`**, **`Startup.tsx`**.
+
+### `bdd9cacd6` — 2026-04-28 — Wazuh - Initial Integration
+
+- **Backend:** **`api/server/routes/wazuh.js`**, **`wazuhThreats.js`**, route registration in **`routes/index.js`**, **`index.js`**; **`services/wazuh/managerClient.js`**, **`indexerClient.js`**; **`Tools/credentials.js`**.
+- **Client workspace:** **`WorkspaceAreaTabs.tsx`**, **`WorkspaceNavContext.tsx`**, **`WorkspaceNewChatButton.tsx`**, **`workspaceNavItems.ts`**, **`WazuhWorkspace/*`** (Activity, Alerts, Cloud, Config, Devices, DonutSummary, Ops, Threats, skeleton, panel), **`lib/wazuh/api.ts`**, **`mocks.ts`**.
+- **Chat shell:** **`ChatView.tsx`**, **`Header.tsx`**, **`ChatForm.tsx`**, **`Landing.tsx`**, **`TemporaryChat.tsx`**, **`MessagesView.tsx`**, **`App.jsx`**, **`ChatRoute.tsx`**, **`style.css`**, **`vite.config.ts`**.
+- **Theming / docs:** **`ThemeQuickSelect.tsx`**, **`SandThemeHtmlFix.tsx`**, **`ThemeProvider.tsx`**, **`ThemeSelector.tsx`**, **`Dropdown.css`**, **`docker-compose.yml`**, **`librechat.example.yaml`**, **`README.md`**, **`README.zh.md`**, **`AGENTS.md`**, **`bun.lock`**.
+
+---
+
+## Sensitive information
+
+Do **not** publish: `.env` values, API keys, DB URIs, JWT secrets, or private webhook URLs. Commit hashes are fine.
 
 ## Related
 
